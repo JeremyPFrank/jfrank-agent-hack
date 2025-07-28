@@ -12,9 +12,9 @@ _LOGGER = logging.getLogger(__name__)
 
 tavily_client = AsyncTavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
 INCLUDE_RAW_CONTENT = False
-MAX_TOKENS_PER_SOURCE = 1000
-MAX_RESULTS = 5
-SEARCH_DAYS = 30
+MAX_TOKENS_PER_SOURCE = 15
+MAX_RESULTS = 3
+SEARCH_DAYS = 1
 
 
 def _deduplicate_and_format_sources(
